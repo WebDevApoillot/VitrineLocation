@@ -23,7 +23,7 @@
             </div>
         </div>
         </section>
-        <section id="Accomodations">
+        <section id="Services">
             <div class="Center"><h2>Accommodations Disponibles</h2></div>
             <div class="Display">
                 <div class="imageBox"><img src="#" alt="FirstPic"></div>

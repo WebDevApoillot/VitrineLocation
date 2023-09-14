@@ -35,6 +35,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    text-decoration: underline;
 }
 .menu a {
     font-family: Arial;

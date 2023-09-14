@@ -7,7 +7,7 @@
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#Presentation">Presentation</a></li>
-                <li><a href="#Accomodations">Services</a></li>
+                <li><a href="#Services">Services</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
