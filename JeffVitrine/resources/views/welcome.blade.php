@@ -26,14 +26,27 @@
         <section id="Services">
             <div class="Center"><h2>Accommodations Disponibles</h2></div>
             <div class="Display">
-                <div class="imageBox"><img src="#" alt="FirstPic"></div>
-                <div class="imageBox"><img src="#" alt="SecondPic"></div>
-                <div class="imageBox"><img src="#" alt="ThirdPic"></div>
-                <div class="imageBox"><img src="#" alt="FourthPic"></div>
-                <div class="imageBox"><img src="#" alt="FifthPic"></div>
-                <div class="imageBox"><img src="#" alt="SixthPic"></div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="FirstPic">
+                <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+            </div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="SecondPic">
+                    <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+                </div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="ThirdPic">
+                    <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+                </div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="FourthPic">
+                    <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+                </div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="FifthPic">
+                    <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+                </div>
+                <div class="imageBox"><img src="https://placehold.co/300x180" alt="SixthPic">
+                    <div class="imageDescription">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</div>
+                </div>
 
             </div>
+            <div id="zoomedImage" onclick="this.style.display='none';"></div>
         </section>
         <section id="Contact">
             <div class="contact-container">
@@ -68,6 +81,22 @@
 
         </section>
     </div>
+<script>
+    function zoomImage(){
+    let images= document.querySelectorAll('.imageBox img');
+    let zoomedImage= document.querySelector('#zoomedImage');
 
+    images.forEach(img => {
+  img.addEventListener('click', function() {
+    zoomedImage.style.backgroundImage = 'url(' + img.src + ')';
+    zoomedImage.style.display = 'block';
+  });
+});
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    zoomImage();
+});
+</script>
 
     @endsection

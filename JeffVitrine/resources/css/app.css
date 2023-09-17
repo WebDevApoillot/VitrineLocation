@@ -105,13 +105,33 @@
     position: relative;
     margin: 15px;
     max-height: 180px;
-    max-width: 270px;
+    max-width: 300px;
+    margin-top: 115px;
+}
+.imageDescription{
+    position: relative;
+    margin: 5px;
+    max-height: 70px;
+    max-width: 300px;
+    z-index: 1;
 }
 .Display img {
     max-width: 300px;
     height: 180px;
 }
-
+#zoomedImage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 1000px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.5);
+  }
 /*------ Formulaire de Contact -----*/
 
 .contact-container
